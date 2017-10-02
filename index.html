@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <title>reveal.js - Math Plugin</title>
+
+		<meta name="description" content="A framework can optimize a solar powered system">
+		<meta name="author" content="Wei He">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    </head>
+    
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+                <section>
+					<h3>Solar PV Powered System</h3>
+					<h7>A framework can co-optimize solar powered system and electrical load</h3>
+                    <p>
+                        <br>
+						<small>Lab Lunch Presentation on 3 Oct 2017 </small>
+                        <br>
+                        <small> Wei He </small>
+					</p>
+                    
+                    <div class="topbar">
+                        <!--image class="logo" src="images/mit_logo_1.png" height="70" width="260"-->
+                        <image class="logo" src="images/GEAR_Logo.png" height="70" width="260">
+                        <image class="logo" src="images/pvlab_logo.jpeg" height="70" width="260">
+                    </div>
+				</section>
+                
+                <section>
+                    
+                        <h3> Background</h3>
+                        <img src="images/background/background.001.jpeg" style="background:none; border:none; box-shadow:none;" height="520" width="760">
+                </section>
+            
+                
+                <section id="fragments_co1">
+                    <h4>Can we reduce the cost by co-optimizing the power system and the load system?</h4>
+                    <h4 class="fragment">YES !!</h4>
+                    <img class="fragment" src="images/flex.png" style="background:none; border:none; box-shadow:none;" height="220" width="660">
+                        <br>
+                        <img class="fragment" src="images/flex_cost.png" style="background:none; border:none; box-shadow:none;" height="220" width="360">
+                    
+                 </section>
+
+                <section>
+                    <section id="fragments_co2">
+                    <h3>How to co-optimize the solar PV power system with the load?</h3>
+                        <br>
+                        <h4 class="fragment">A modeling and optimization framework!!</h4>
+                            <br>
+                            </section>
+                    
+                    <section id="fragments_co3">
+                        <h3>What we want the optimization framework do?</h3>
+                        <ul class="fragment">
+                            <li>Optimal selection of components i.e. PV panel, battery, pump, etc</li>
+                            <li>Optimal system design</li>
+                            <li>Flexible in designig different systems</li>
+                            
+                        </ul>
+                        </section>
+
+                    <section>
+                        <h3>Libraries in the framework</h3>
+
+                        <img src="images/libs/libs.001.png" style="background:none; border:none; box-shadow:none;" height="580" width="850">
+                            </section>
+                    
+                    <section>
+                        <h3>A typical optimization case</h3>
+                        
+                        <img src="images/case/case.001.jpeg" style="background:none; border:none; box-shadow:none;" height="580" width="850">
+                            </section>
+
+                </section>
+                
+
+
+
+                <section>
+                    
+                    <section>
+                        <h3>Cost reduction of off-grid solar power system by flexibly operating the electrical load
+                        </h3>
+                        <img src="images/general_load.png" style="background:none; border:none; box-shadow:none;" height="380" width="550">
+                        
+                        </section>
+                    
+                    <section>
+                        <h3>A flexible load can reduce the battery cost</h3>
+                        <img src="images/multi_load.png" style="background:none; border:none; box-shadow:none;" >
+                    </section>
+                    
+                    <section>
+                        <h3>Cost reduction due to the flexible operation</h3>
+                        <img src="images/cost_reduce.png" style="background:none; border:none; box-shadow:none;" >
+                            </section>
+                
+                    
+                </section>
+
+
+                <section>
+    
+                    <section>
+                        <h3>Optimization of the PV-EDR system in Chelluru</h3>
+                        <img src="images/chelluru_pic.jpg" style="background:none; border:none; box-shadow:none;" height="380" width="550">
+            
+                    </section>
+    
+                <section>
+                    <h3>Data analysis of the results collected on Aug</h3>
+                    <ul>
+                        <li>Inverter DC-AC efficiency</li>
+                        <li>DC power AC-DC efficiency</li>
+                        <li>Water consumption profile</li>
+                    </ul>
+                    </section>
+                
+                <section>
+                    <h3>Inverter DC-AC efficeincy</h3>
+                    <img src="images/power_compare_eff.png"  height="260" width="640">
+                    <p style="font-size:30px">
+
+                       <br>
+                       \[\begin{aligned}
+                       P_{to EDR} = (P_{solar}-P_{batt-char} / \eta_{batt} + P_{batt-dischar}) \times \eta_{DC/AC}\
+                       \end{aligned} \]
+                    </p>
+                       
+                </section>
+                
+                <section>
+                    <h3>DC supply AC-DC efficeincy</h3>
+                        <img src="images/power_flow_eff.png"  height="260" width="640">
+                        <p style="font-size:30px">
+                            
+                        <br>
+                        \[\begin{aligned}
+                        P_{EDR}^{simulation} = \frac{(P_{EDR-batch}+P_{pump} )^{simulation}}{\eta_{AC/DC}}\
+                        \end{aligned} \]
+                        </p>
+                            
+                </section>
+                
+                
+                <section>
+                    <h3>Collected water consumption profile</h3>
+                    <img src="images/lefttap_Feb.png" height="230" width="350">
+                    <img src="images/righttap_Feb.png" height="230" width="350">
+                        
+                    <img src="images/lefttap_Aug.png" height="230" width="350">
+                    <img src="images/righttap_Aug.png" height="230" width="350">
+                        
+                </section>
+                
+                <section>
+                    <h3>Summarised a typical water consumption profile</h3>
+                    <img src="images/water_consumption.png" height="330" width="550">
+                        
+                </section>
+                
+                <section>
+                    <h3>EDR operation: batch vs hybrid/batch</h3>
+                    <img src="images/hybrid.png" height="430" width="850">
+                        
+                        </section>
+                
+                <section>
+                    <h3>Re-optimization of the PV-EDR system in Chelluru</h3>
+                    <ul style="font-size:25px">
+                        <li>Averaged operating hour is about 8 hours per day</li>
+                        <li>Water recovery will decrease to the maximum water recovery for avoiding salt precipitation</li>
+                        <li>Using the water demand profile collected in Chelluru</li>
+                        <li>Efficiencies back-calculated from the data</li>
+                        <li>Produce 100 or 300 ppm product water</li>
+                        <li>Batch and hybrid operation will be investigated</li>
+                    
+                    </ul>
+                </section>
+                
+                
+    
+            </section>
+
+
+
+
+
+
+
+				<!-- Example of nested vertical slides -->
+												
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+              math: {
+              // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+              config: 'TeX-AMS_HTML-full'
+              },
+              // More info https://github.com/hakimel/reveal.js#dependencies
+                              
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true }
+
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

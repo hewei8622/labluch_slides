@@ -29,7 +29,7 @@
 				
                 <section>
 					<h3>Solar PV Powered System</h3>
-					<h7>A framework can co-optimize solar powered system and electrical load</h3>
+					<h6 style=font-size:25px>A framework can co-optimize solar powered system and electrical load</h6>
                     <p>
                         <br>
 						<small>Lab Lunch Presentation on 3 Oct 2017 </small>
@@ -70,12 +70,14 @@
                     
                     <section id="fragments_co3">
                         <h3>What we want the optimization framework do?</h3>
-                        <ul class="fragment">
+                        <h3 style=font-size:29px style="text-align: left" class="fragment">
                             <li>Optimal selection of components i.e. PV panel, battery, pump, etc</li>
-                            <li>Optimal system design</li>
-                            <li>Flexible in designig different systems</li>
+                            <br>
+			    <li>Optimal system design</li>
+                            <br>
+		            <li>Flexible in designig different systems</li>
                             
-                        </ul>
+                        </h3>
                         </section>
 
                     <section>
@@ -104,6 +106,14 @@
                         
                         </section>
                     
+                <section>
+                    <h4 >Fixed Operation and flexible operation</h4>
+                    <img src="images/flex.png" style="background:none; border:none; box-shadow:none;" width= 70%>
+                        <br>
+                        <img src="images/flex_cost.png" style="background:none; border:none; box-shadow:none;" width= 35%>
+                    
+                 </section>
+
                     <section>
                         <h3>A flexible load can reduce the battery cost</h3>
                         <img src="images/multi_load.png" style="background:none; border:none; box-shadow:none;" >
@@ -234,7 +244,7 @@
 					<th>35983<th>
 			</tbody>
 			</table>
-		<p> Average operating daily hour is 10h. It needs a higher weight to the penalty function!!<p> 
+		<p style=font-size:25px> Average operating daily hour is 10h. It needs a higher weight to the penalty function!!<p> 
                 </section>
                
 		 <section>
@@ -264,9 +274,63 @@
 					<th>32315<th>
 			</tbody>
 			</table>
-		<p> Average operating daily hour is 8h. <p> 
+		<p style=font-size:25px> Average operating daily hour is 8h. <p> 
                 </section>
-               
+              <section>
+
+		<h6>Batch operation</h6>
+                    <table style="font-size:25px" title="Batch">
+
+			<thead>
+				<tr>
+					<th>PV area [m2]<th>
+					<th>Battery capacity [kWh]<th>
+					<th>Tank size [m3] <th>
+					<th>Batch size [m3]<th>
+					<th>Capital cost [$]<th>
+					<th>Opearting-hour [h]<th>
+			</thead>
+                        
+			<tbody>
+				<tr>
+					<th>43.781<th>
+					<th>7.62<th>
+					<th>10<th>
+					<th>0.7348<th>
+					<th>35983<th>
+					<th>10<th>
+			</tbody>
+			</table>
+			<br>
+
+
+		<h6>Hybrid/batch operation</h6>
+                    <table style="font-size:25px" title="Hybrid/batch">
+			<thead>
+				<tr>
+					<th>PV area [m2]<th>
+					<th>Battery capacity [kWh]<th>
+					<th>Tank size [m3] <th>
+					<th>Batch size [m3]<th>
+					<th>Capital cost [$]<th>
+					<th>Operate-hour [h]<th>
+			</thead>
+                        
+			<tbody>
+				<tr>
+					<th>35.87<th>
+					<th>8.36<th>
+					<th>10<th>
+					<th>1<th>
+					<th>32315<th>
+					<th>8<th>
+			</tbody>
+			</table>
+		<br>	
+			<h6 style=font-size:25px>Short operating-hour ---> large volume batch size, large batt capacity </h6>
+			<h6 style=font-size:25px>PV-hybrid/batch EDR has lower cost than PV-batch EDR</h6>
+
+		</section> 
 
             </section>
 
@@ -279,7 +343,7 @@
                         <li>Optimization framework implementation</li>
                         <li>Data analysis and fault prediction and prevention</li>
                         <li>Time-variant operaiton and flexible operation</li>
-			<li>PV-EDR and PV-drip<li>
+			<li>PV-EDR and PV-drip</li>
                     </ul>
                         
                 </section>
